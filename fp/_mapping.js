@@ -263,19 +263,8 @@ exports.mutate = {
 
 /** Used to map real names to their aliases. */
 exports.realToAlias = (function() {
-  var hasOwnProperty = Object.prototype.hasOwnProperty,
-      object = exports.aliasToReal,
-      result = {};
-
-  for (var key in object) {
-    var value = object[key];
-    if (hasOwnProperty.call(result, value)) {
-      result[value].push(key);
-    } else {
-      result[value] = [key];
-    }
-  }
-  return result;
+  // __COMMIT0_STUB__
+  throw new Error("STUB");
 }());
 
 /** Used to map method names to other names. */
